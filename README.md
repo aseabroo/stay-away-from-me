@@ -1,25 +1,30 @@
-# Title
-Stay Away From Me <br>
-Project for BeaverHacks Fall 2020.
+# Stay Away From Me
 
-# Authors:
-Ryan Adams <br>
-Micah Samaduroff <br>
-August Seabrooke <br>
-Anjali Panikar <br>
+A Flutter/Dart team project for BeaverHacks Fall 2020. It uses nearby Bluetooth signals to display a proximity gauge and a count of detected devices.
 
-# Introduction
-The Stay Away From Me (SAFM) app is a cross platform social distancing mobile app. SAFM listens for incoming Bluetooth signals, determines if they are coming from a phone and determines the distance the user is away from those signals. This data is then used in a Proximity Gauge, which changes color and vibrates is the user is getting too close to another device (like another person running this app). It also counts the number of nearby devices, so the user has a better idea of how crowded the area is.
+## Team and source
 
-# Technologies
-- Flutter
-- Dart
-- Bluetooth
+Ryan Adams, Micah Samaduroff, August Seabrooke, and Anjali Panikar.
 
-# Launch
+This repository is a fork of [Ryan-Adams365/stay-away-from-me](https://github.com/Ryan-Adams365/stay-away-from-me). It preserves the hackathon work and shared authorship.
 
-1. Ensure you have Flutter installed
-2. Ensure you have either the Android or iOS sdk and either a device or device emulator loaded
-3. Clone this repository
-4. run 'flutter pub get' in the project folder to download the necessary dependencies
-5. Run the app with flutter run (note that this must be deployed to an actual device to detect nearby Bluetooth devices)
+## Run locally
+
+With Flutter and the Android or iOS development tools installed:
+
+```bash
+git clone https://github.com/aseabroo/stay-away-from-me.git
+cd stay-away-from-me
+flutter pub get
+flutter run
+```
+
+Bluetooth detection needs a physical device and the relevant device permissions.
+
+## Current status
+
+Historical hackathon prototype using 2020-era dependencies. Compatibility with current Flutter releases and mobile Bluetooth permissions has not been verified.
+
+Signal strength gives an approximate indication of proximity and varies with devices and surroundings. The project does not establish accurate distance measurements.
+
+A useful next step is to document the original tool versions and test scanning on one current physical device.
